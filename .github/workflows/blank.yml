@@ -30,8 +30,9 @@ jobs:
         uses: xu-cheng/latex-action@3.2.0
         with:
           root_file: main.tex
-
-      - name: Release
-        uses: softprops/action-gh-release@v2
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4.4.3
         with:
-          files: main.pdf
+          name: PDF
+          path: main.pdf
+            
