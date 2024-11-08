@@ -34,5 +34,5 @@ jobs:
         uses: actions/upload-artifact@v4.4.3
         with:
           name: PDF
-          path: outputalspdf/test/main.pdf
+          path: main.pdf
             
